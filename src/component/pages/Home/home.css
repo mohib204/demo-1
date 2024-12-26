@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+    background-image: url(https://img.freepik.com/premium-photo/captivating-image-rain-falling-surface-window-glass_505557-15686.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffffff; /* Fallback color */
+    margin: 0;
+    height: 100vh;
+}
+
+.homehead h1 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.homepage {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Responsive Header */
+h1 {
+    text-align: center;
+    color: white;
+    background: linear-gradient(45deg, #303eec, #28b8ea);
+    width: 80%;
+    max-width: 750px;
+    margin: 20px auto;
+    border-radius: 40px;
+    border: solid 2px #eca012;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* Homehead Paragraph */
+.homepage .homehead p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: white;
+    background: linear-gradient(45deg, #28b8ea, #eca012);
+    width: 80%;
+    max-width: 350px;
+    margin: 20px auto;
+    border-radius: 40px;
+    border: solid 2px #f19b2a;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* About and Guestbook Sections */
+.about, .guestbook {
+    background: linear-gradient(rgb(243, 243, 243), rgba(87, 214, 214, 0.61));
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    opacity: 1;
+    animation: slideInLeft 1s ease-out;
+}
+
+.about:hover, .guestbook:hover {
+    box-shadow: 0px 8px 16px rgba(48, 62, 236, 0.3);
+    transform: translateY(-5px);
+    background-color: #303eec;
+    color: white;
+    border: 2px solid #eca012;
+}
+
+.guestbook {
+    animation: slideInRight 1s ease-out;
+}
+
+.about p {
+    color: #000000;
+}
+
+.fo {
+    color: #eca012;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+.guestbook a {
+    text-decoration: none;
+    color: #303eec;
+    font-weight: bold;
+}
+
+.guestbook a:hover {
+    text-decoration: underline;
+    color: #eca012;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #303eec;
+}
+
+footer a {
+    color: #eca012;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #28b8ea;
+}
+
+/* Keyframes for Animations */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    h1 {
+        width: 90%;
+        font-size: 1.5rem;
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    .homepage .homehead p {
+        width: 90%;
+        font-size: 1rem;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .about, .guestbook {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .about img {
+        width: 120px;
+        height: 120px;
+        margin-right: 10px;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .homepage .homehead p {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .about, .guestbook {
+        padding: 10px;
+    }
+
+    .about img {
+        width: 100px;
+        height: 100px;
+    }
+
+    footer {
+        font-size: 0.7em;
+    }
+}

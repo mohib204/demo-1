@@ -1,0 +1,102 @@
+/* General styles for the container and heading */
+.container {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Content section */
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background: linear-gradient(rgb(94, 196, 255),white,rgb(130, 224, 255));
+    
+  }
+  
+  /* Styling the image container */
+  .image-container p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .image-container img{
+    border: solid 3px black;
+  }
+  .image-container p:hover{
+    background-color: rgb(78, 214, 255);
+    border-radius: 20px;
+    
+  }
+ 
+  p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 600px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  /* Style the profile image */
+  .circle-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  
+    .content {
+      padding: 15px;
+    }
+  
+    p {
+      font-size: 1rem;
+      padding: 0 15px;
+    }
+  
+    .circle-image {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .circle-image {
+      width: 100px;
+      height: 100px;
+    }
+  
+    p {
+      font-size: 0.9rem;
+      padding: 0 10px;
+    }
+  }
+  

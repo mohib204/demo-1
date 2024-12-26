@@ -1,0 +1,38 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto; /* Pushes footer to the bottom */
+    font-size: 0.9em;
+    color: #303eec;
+    background-color: rgb(49, 49, 49);
+    height: 100px;
+    border-radius: 100px 100px 0 0; /* Adjusted for consistent style */
+    width: 100%; /* Ensures footer spans the full width */
+    position:relative ; /* Ensures footer stays at the bottom */
+    bottom: 0; /* Anchors footer to the bottom of the page */
+}
+
+footer a {
+    color: #eca012;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #28b8ea;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    footer {
+        font-size: 0.8em;
+        height: 80px; /* Adjust height for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        font-size: 0.7em;
+        height: 70px; /* Further adjust height for ultra-small screens */
+    }
+}

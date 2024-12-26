@@ -1,0 +1,174 @@
+/* General Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000000;
+  color: white;
+  position: relative;
+  height: 30px;
+}
+.dropdown-container .dropdown-item {
+  display: flex;
+  
+}
+.rope {
+  width: 30px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.3s ease-in-out; /* Smooth animation for movement */
+}
+
+.rope:hover {
+  transform: translateX(10px); /* Moves the rope 10px to the right */
+}
+
+.navbar-brand a {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin: 0 1px;
+  margin-right: 30px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar-links a:hover {
+  color: hsl(0, 100%, 50%);
+}
+
+.toggle-label {
+  margin-right: 40px;
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile Styles */
+.toggle-input {
+  display: none;
+}
+
+.navbarbrand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+}
+
+.small-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.rope img {
+  width: 45px;
+  height: 80px;
+  margin-top: 20px;
+}
+
+/* Mobile Navigation */
+@media screen and (max-width: 768px) {
+  .toggle-label {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #000;
+    padding: 10px;
+    border-radius: 8px;
+    width: 150px;
+  }
+
+  .toggle-input:checked + .toggle-label + .navbar-links {
+    display: flex;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+}
+
+/* Rope Wrapper */
+.rope-wrapper {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.rope-image {
+  width: 40px;
+  height: 50px;
+  transition: transform 0.2s ease;
+  
+}
+
+/* Dropdown Styles */
+.dropdown-container {
+  position: absolute;
+  top: 60px;
+  right: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 10px;
+  margin: 5px 0;
+  background: linear-gradient(45deg, #28b8ea, #ffffff, blue);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.dropdown-item:hover {
+  background-color: yellow;
+  color: black;
+}
+
+/* Responsive Dropdown */
+@media screen and (max-width: 768px) {
+  .dropdown-container li {
+    
+    width: 100px; /* Full width on smaller screens */
+    align-items: center; /* Center items */
+  
+  }
+
+  .dropdown-item {
+    width: 80%; /* Adjust the width for a cleaner look */
+  }
+}
